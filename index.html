@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ConstructEx</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .noise-overlay {
+          background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');
+      }
+    </style>
+</head>
+<body class="bg-white antialiased">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-black text-gray-900 tracking-tighter">Construct<span class="text-[#7C3AED]">Ex</span></a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="index.html" class="text-[#7C3AED] font-bold">Home</a>
+                <a href="about.html" class="hover:text-[#7C3AED] transition-colors">About</a>
+                <a href="contact.html" class="hover:text-[#7C3AED] transition-colors">Contact</a>
+                <a href="signin.html" class="hover:text-[#7C3AED] transition-colors">Sign In</a>
+                <a href="signup.html" class="bg-[#7C3AED] text-white px-6 py-2.5 rounded-full hover:bg-[#6D28D9] transition-colors font-bold shadow-lg shadow-[#7C3AED]/30">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex flex-col justify-center items-center overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none z-0 bg-cover bg-center bg-no-repeat bg-[url('images/hero_bg_desktop.jpeg')]">
+            <div class="absolute inset-0 bg-white/70 backdrop-blur-[4px]"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 mt-16 max-w-5xl mx-auto">
+            <h1 class="leading-[0.85] flex flex-col items-center">
+                <span class="font-black text-7xl md:text-[8rem] lg:text-[10rem] block tracking-tighter text-gray-900">Dry Wall</span>
+                <span class="font-light text-6xl md:text-7xl lg:text-[8rem] block tracking-tight mt-2 text-[#7C3AED]">Experts</span>
+            </h1>
+            
+            <div class="mt-12 flex justify-center">
+                <a href="contact.html" class="group flex items-center gap-0 rounded-full overflow-hidden font-semibold text-lg transition-all duration-300 bg-[#7C3AED] hover:bg-[#6D28D9] shadow-[0_10px_40px_rgba(124,58,237,0.3)] hover:shadow-[0_15px_50px_rgba(124,58,237,0.5)] pl-8">
+                    <span class="text-white pr-4 py-4 tracking-wide">Get an Estimate</span>
+                    <span class="flex items-center justify-center rounded-full my-2 mr-2 bg-white w-11 h-11 shrink-0 transition-transform duration-300 group-hover:rotate-45">
+                        <svg class="w-5 h-5 stroke-[#7C3AED]" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute inset-0 noise-overlay pointer-events-none opacity-20 z-20"></div>
+    </section>
+</body>
+</html>

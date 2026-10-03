@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ConstructEx</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white antialiased">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-black text-gray-900 tracking-tighter">Construct<span class="text-[#7C3AED]">Ex</span></a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-[#7C3AED] transition-colors">Home</a>
+                <a href="about.html" class="text-[#7C3AED] font-bold">About</a>
+                <a href="contact.html" class="hover:text-[#7C3AED] transition-colors">Contact</a>
+                <a href="signin.html" class="hover:text-[#7C3AED] transition-colors">Sign In</a>
+                <a href="signup.html" class="bg-[#7C3AED] text-white px-6 py-2.5 rounded-full hover:bg-[#6D28D9] transition-colors font-bold shadow-lg shadow-[#7C3AED]/30">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="py-32 px-6 bg-white relative overflow-hidden min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto w-full mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                
+                <!-- Text Content -->
+                <div>
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] font-bold text-xs tracking-widest uppercase mb-6">
+                        Established 2006
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-8">
+                        Building the GTA's Architectural Backbone.
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6 font-medium">
+                        Since 2006, Constructex has been the premier partner for luxury residential and high-end commercial developments across the Greater Toronto Area. 
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed font-medium">
+                        We don't just build walls; we engineer flawless structural foundations and deliver absolute Level-5 finishes that set the standard for modern architectural excellence. With nearly two decades of precision craftsmanship, our commitment remains unmatched.
+                    </p>
+                    
+                    <div class="mt-10 grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-4xl font-black text-[#7C3AED] mb-1">18+</h4>
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider">Years Active</p>
+                        </div>
+                        <div>
+                            <h4 class="text-4xl font-black text-[#7C3AED] mb-1">GTA</h4>
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider">Service Area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Grid -->
+                <div class="relative mt-8 md:mt-0">
+                    <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative border border-gray-100">
+                        <div class="absolute inset-0 bg-[url('images/living-room.jpg')] bg-cover bg-center transition-transform duration-700 hover:scale-105"></div>
+                        <div class="absolute inset-0 bg-[#7C3AED]/5 mix-blend-overlay pointer-events-none"></div>
+                    </div>
+                    
+                    <div class="absolute -bottom-6 -left-6 md:-left-12 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[240px] z-10 hidden sm:block">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-[#7C3AED]/10 flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-[#7C3AED]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 mb-1">Precision Guaranteed</h5>
+                                <p class="text-xs text-gray-500 font-medium">Fully licensed & insured in Ontario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
